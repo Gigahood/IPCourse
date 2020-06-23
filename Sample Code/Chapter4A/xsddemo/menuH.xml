@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<menu
+  xmlns:xsi='http://www.w3.org/2001/XMLSchema-instance'
+  xsi:noNamespaceSchemaLocation='menu.xsd'>
+  <item>
+    <code>1001</code>
+    <name>Nasi Lemak Ayam</name>
+    <price>10.90</price>
+  </item>
+  <item>
+    <code>1002</code>
+    <name>Pineapple Fried Rice</name>
+    <price>20.00</price>
+  </item>
+  <item>
+    <code>1003</code>
+    <name>Ice Lemon Tea</name>
+    <price>5.00</price>
+  </item>
+</menu>
+
+

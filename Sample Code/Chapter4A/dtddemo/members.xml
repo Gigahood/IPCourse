@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE members SYSTEM 'members.dtd'>
+<members>
+  <member id="F1234">
+    <name>Fred Flinstone</name>
+    <age>45</age>
+  </member>
+  <member id="A5678" spouse_id="F1234">
+    <name>Wilma Amber</name>
+    <age>38</age>
+  </member>
+  <member id="F8888" parent_id="F1234 A5678">
+    <name>Pebbles Flinstone</name>
+    <age>5</age>
+  </member>
+</members>

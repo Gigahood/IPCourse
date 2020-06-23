@@ -1,0 +1,19 @@
+<?xml version="1.0"?>
+<xs:schema version="1.0"
+           xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:element name="participants">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element name="student" type="studentType" maxOccurs="unbounded" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  
+  <xs:complexType name="studentType">
+    <xs:sequence>
+      <xs:element name="name" type="xs:string"/>
+      <xs:element name="regNo" type="xs:string"/>
+    </xs:sequence>
+  </xs:complexType>
+</xs:schema>
+

@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<menu>
+  <item>
+    <code>1001</code>
+    <name>Nasi Lemak Ayam</name>
+    <price currency="RM">10.90</price>
+    <price currency="USD">10.90</price>
+  </item>
+  <item>
+    <code>1002</code>
+    <name>Seafood Fried Rice</name>
+    <price currency="RM">11.90</price>
+    <price currency="USD">3.00</price>
+  </item>
+</menu>
+

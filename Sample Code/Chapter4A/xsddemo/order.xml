@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<order orderID="12"
+xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+xsi:noNamespaceSchemaLocation="orderVB.xsd">
+  <customer>Jane Doe</customer>
+  <deliverTo>
+    <officeNo>A102</officeNo>
+    <building>Bangunan TSKKB</building>
+    <phone>010-12345678</phone>
+  </deliverTo>
+  <item>
+    <name>Nasi Lemak Biasa</name>
+    <quantity>2</quantity>
+    <price>1.50</price>
+  </item>
+  <item>
+    <name>Macaroni and Cheese</name>
+    <quantity>3</quantity>
+    <price>4.50</price>
+  </item>
+</order>
+

@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<weatherdata>
+    <date>6 July 2017</date>
+    <weatherstatistics>
+        <temperature>
+            <lowest><![CDATA[24&#176; celcius]]></lowest>
+            <highest>30&#176; celcius</highest>
+            <average>27&#176;  celcius</average>
+        </temperature>
+        <humidity>76 %</humidity>
+        <forecast>   > 50% chance of rain tomorrow </forecast>
+    </weatherstatistics>
+</weatherdata>

@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/css" href="menu.css" ?>
+<menu>
+  <message>
+    <![CDATA[
+    MyRestaurant sells authentic Malaysian food.
+    Made with fresh ingredients and original recipes.
+    ]]>
+  </message>
+  <item>
+    <code>1001</code>
+    <name>Nasi Lemak Ayam</name>
+    <price currency="RM">RM10.90</price>
+    <price currency="USD">$2.50</price>
+    <price currency="EUR">&#8364;2.20</price>
+  </item>
+  <item>
+    <code>1002</code>
+    <name>Seafood Fried Rice</name>
+    <price currency="RM">RM20.00</price>
+    <price currency="USD">$4.70</price>
+    <price currency="EUR">&#8364;4.10</price>
+  </item>
+</menu>
+

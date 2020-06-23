@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!ELEMENT members (member*)>
+<!ELEMENT member (name, age)>
+<!ATTLIST member  id ID #REQUIRED
+                  spouse_id IDREF #IMPLIED
+                  parent_id IDREFS #IMPLIED>
+<!ELEMENT name (#PCDATA)>
+<!ELEMENT age (#PCDATA)>
+

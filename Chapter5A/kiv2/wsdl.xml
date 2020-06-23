@@ -1,0 +1,46 @@
+<?xml version="1.0"?>
+<definitions xmlns="http://schemas.xmlsoap.org/wsdl/" xmlns:tns="http://localhost/Chapter5A/soapws/soap-server2.php" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:soap-enc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/" name="Events" targetNamespace="http://localhost/Chapter5A/soapws/soap-server2.php">
+  <types>
+    <xsd:schema targetNamespace="http://localhost/Chapter5A/soapws/soap-server2.php">
+      <xsd:import namespace="http://schemas.xmlsoap.org/soap/encoding/"/>
+    </xsd:schema>
+  </types>
+  <portType name="EventsPort">
+    <operation name="getEvents">
+      <input message="tns:getEventsIn"/>
+    </operation>
+    <operation name="getEventsById">
+      <input message="tns:getEventsByIdIn"/>
+    </operation>
+  </portType>
+  <binding name="EventsBinding" type="tns:EventsPort">
+    <soap:binding style="rpc" transport="http://schemas.xmlsoap.org/soap/http"/>
+    <operation name="getEvents">
+      <soap:operation soapAction="http://localhost/Chapter5A/soapws/soap-server2.php#getEvents"/>
+      <input>
+        <soap:body use="encoded" encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" namespace="http://localhost/Chapter5A/soapws/soap-server2.php"/>
+      </input>
+      <output>
+        <soap:body use="encoded" encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" namespace="http://localhost/Chapter5A/soapws/soap-server2.php"/>
+      </output>
+    </operation>
+    <operation name="getEventsById">
+      <soap:operation soapAction="http://localhost/Chapter5A/soapws/soap-server2.php#getEventsById"/>
+      <input>
+        <soap:body use="encoded" encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" namespace="http://localhost/Chapter5A/soapws/soap-server2.php"/>
+      </input>
+      <output>
+        <soap:body use="encoded" encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" namespace="http://localhost/Chapter5A/soapws/soap-server2.php"/>
+      </output>
+    </operation>
+  </binding>
+  <message name="getEventsIn"/>
+  <message name="getEventsByIdIn">
+    <part name="eventId" type="xsd:anyType"/>
+  </message>
+  <service name="EventsService">
+    <port name="EventsPort" binding="tns:EventsBinding">
+      <soap:address location="http://localhost/Chapter5A/soapws/soap-server2.php"/>
+    </port>
+  </service>
+</definitions>

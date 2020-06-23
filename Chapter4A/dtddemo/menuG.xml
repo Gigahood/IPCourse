@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE menu SYSTEM 'menuG.dtd'>
+<menu>
+  <item code="M1001">    
+    <name>Nasi Lemak Ayam</name>
+    <price currency="MYR">10.90</price>
+    <combo paired_item="C1002" price="25.00"></combo>
+  </item>
+  <item code="C1002">
+    <name>Seafood Fried Rice</name>
+    <price currency="MYR">20.00</price>
+    <combo paired_item="D1003" price="21.00" />
+  </item>
+  <item code="D1003">
+    <name>Ice Lemon Tea</name>
+    <price currency="MYR">5.00</price>
+  </item>
+</menu>
+

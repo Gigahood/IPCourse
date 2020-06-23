@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<menu>
+  <item>
+    <code>1001</code>
+    <name>Nasi Lemak Ayam</name>
+    <price>10.90</price>
+  </item>
+  <item>
+    <code>1002</code>
+    <name>Seafood Fried Rice</name>
+    <price>11.90</price>
+  </item>
+  <item>
+    <code>1003</code>
+    <name>Turkey Sandwich</name>
+    <price>8.80</price>
+  </item>
+</menu>

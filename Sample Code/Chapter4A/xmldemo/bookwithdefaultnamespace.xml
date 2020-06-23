@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<book xmlns:dbs="http://www-dbs/dbs">
+  <dbs:description>...</dbs:description>
+  <dbs:text>
+    <dbs:formula>
+      <mathml:math xmlns:mathml="http://www.w3.org/1997/Math/MathML">
+        ...
+      </mathml:math>
+      </dbs:formula>
+  </dbs:text>
+</book>

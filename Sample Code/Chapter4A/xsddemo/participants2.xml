@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<participants
+  xmlns:xsi='http://www.w3.org/2001/XMLSchema-instance'
+  xsi:noNamespaceSchemaLocation='participants.xsd'>
+  <student>
+    <name>Jane Doe</name>
+    <regNo>16WMR12345</regNo>
+  </student>
+   <student>
+    <name>Don Juan</name>
+    <regNo>16WMR88888</regNo>
+  </student> 
+</participants>
+
+

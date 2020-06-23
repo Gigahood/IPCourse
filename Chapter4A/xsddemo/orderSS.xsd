@@ -1,0 +1,48 @@
+<?xml version="1.0"?>
+<xs:schema version="1.0" 
+           xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  
+  <!-- Definitions of simple elements -->
+  <xs:element name="customer" type="xs:string"/>
+  <xs:element name="officeNo" type="xs:string"/>
+  <xs:element name="building" type="xs:string"/>
+  <xs:element name="phone" type="xs:string"/>
+  <xs:element name="name" type="xs:string"/>
+  <xs:element name="quantity" type="xs:positiveInteger"/>
+  <xs:element name="price" type="xs:decimal"/>
+  
+  <!-- Definitions of attributes -->
+  <xs:attribute name="orderID" type="xs:string"/>
+  
+  <!-- Definitions of complex elements -->
+  <xs:element name="deliverTo">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element ref="officeNo"/>
+        <xs:element ref="building"/> 
+        <xs:element ref="phone"/>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  
+  <xs:element name="item">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element ref="name"/>
+        <xs:element ref="quantity"/> 
+        <xs:element ref="price"/>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  
+  <xs:element name="order">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element ref="customer"/>
+        <xs:element ref="deliverTo"/> 
+        <xs:element ref="item" maxOccurs="unbounded"/>
+      </xs:sequence>
+      <xs:attribute ref="orderID" use="required"/>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>
